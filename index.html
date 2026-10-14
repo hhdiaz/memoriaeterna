@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Memoria Eterna · Estudio de fotografía</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#inicio">Memoria Eterna</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="menu">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#paquetes">Paquetes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Memoria Eterna <em>fotografía que se queda.</em></h1>
+      <p class="lead">Retratos, bodas y familias fotografiados con calma y luz natural, para que dentro de veinte años sigas sintiendo ese día.</p>
+      <a class="btn" href="#contacto">Reservar una sesión</a>
+      <a class="btn ghost" href="#galeria">Ver trabajos</a>
+    </div>
+
+    <figure class="print" aria-label="Fotografía revelándose">
+      <div class="scene">
+        <!-- FOTO DE PORTADA: pon tu imagen en la carpeta img/ y cambia el nombre -->
+        <img src="img/portada.jpg" alt="Fotografía de portada" onerror="this.remove()">
+      </div>
+      <figcaption>memorias que son eternas</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <h2>Lo que fotografíamos</h2>
+    <div class="svc-grid">
+      <!-- FOTOS DE SERVICIOS: img/bodas.jpg, img/retratos.jpg, img/familia.jpg, img/eventos.jpg -->
+      <article class="svc-card c-bodas">
+        <div class="ph"><img src="img/bodas.jpg" alt="Fotografía de boda" onerror="this.remove()"><h3>Bodas</h3></div>
+        <p>La ceremonia y la fiesta, completas.</p>
+      </article>
+      <article class="svc-card c-retratos">
+        <div class="ph"><img src="img/retratos.jpg" alt="Retrato" onerror="this.remove()"><h3>Retratos</h3></div>
+        <p>En estudio o al aire libre.</p>
+      </article>
+      <article class="svc-card c-familia">
+        <div class="ph"><img src="img/familia.jpg" alt="Sesión familiar" onerror="this.remove()"><h3>Familia</h3></div>
+        <p>Sesiones sin prisa, para todas las edades.</p>
+      </article>
+      <article class="svc-card c-eventos">
+        <div class="ph"><img src="img/eventos.jpg" alt="Evento" onerror="this.remove()"><h3>Eventos</h3></div>
+        <p>Quince años, graduaciones y fiestas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <h2>Capturando Momentos</h2>
+    <p>Una muestra de los momentos que hemos guardado.</p>
+
+    <!-- GALERÍA: cambia src y alt de cada foto. Si una foto no existe, se ve el color de muestra. -->
+    <div class="sheet">
+      <div class="frame"><img src="img/foto1.jpg" alt="Atardecer en el Malecón" onerror="this.remove()"><span>Atardecer, Malecón</span></div>
+      <div class="frame"><img src="img/foto2.jpg" alt="Mar de la mañana" onerror="this.remove()"><span>Mar de la mañana</span></div>
+      <div class="frame"><img src="img/foto3.jpg" alt="Domingo en casa" onerror="this.remove()"><span>Domingo en casa</span></div>
+      <div class="frame"><img src="img/foto4.jpg" alt="Jardín" onerror="this.remove()"><span>Jardín</span></div>
+      <div class="frame"><img src="img/foto5.jpg" alt="Primer baile" onerror="this.remove()"><span>Primer baile</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="paquetes">
+  <div class="wrap">
+    <h2>Paquetes</h2>
+    <p>Si necesitas algo distinto, lo armamos contigo.</p>
+    <div class="pk">
+      <div>
+        <h3>Retrato</h3>
+        <div class="price">$60</div>
+        <ul><li>1 hora de sesión</li><li>15 fotos editadas</li><li>Galería digital privada</li></ul>
+      </div>
+      <div class="feat">
+        <h3>Familia</h3>
+        <div class="price">$120</div>
+        <ul><li>2 horas de sesión</li><li>30 fotos editadas</li><li>2 cambios de locación</li></ul>
+      </div>
+      <div>
+        <h3>Evento</h3>
+        <div class="price">$300</div>
+        <ul><li>Hasta 5 horas de cobertura</li><li>100 fotos editadas</li><li>Álbum impreso de 20 páginas</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>Cuéntanos qué quieres recordar</h2>
+      <p>Escríbenos con la fecha y el tipo de sesión. Te respondemos en menos de 24 horas.</p>
+      <p>servicio@memoriaeterna.com<br>Lunes a sábado, de 9:00 a 18:00<br>Estudio en La Habana</p>
+      <div class="social">
+        <!-- CAMBIA los enlaces por los perfiles reales -->
+        <a href="https://instagram.com/memoriaeterna" target="_blank" rel="noopener" aria-label="Instagram de Memoria Eterna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://facebook.com/memoriaeterna" target="_blank" rel="noopener" aria-label="Facebook de Memoria Eterna"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.4 1.5-1.4h1.6V4.5c-.3 0-1.200-.1-2.300-.1-2.300 0-3.800 1.400-3.800 3.900v2.200H8v3h2.500V21z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <label>Nombre<input id="n" type="text" autocomplete="name"></label>
+      <label>Tipo de sesión
+        <select id="t"><option>Retrato</option><option>Familia</option><option>Boda</option><option>Evento</option></select>
+      </label>
+      <label>Mensaje<textarea id="m"></textarea></label>
+      <button class="btn" id="send" type="button">Enviar mensaje</button>
+      <div id="ok" role="status"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot"><span>© 2026 Memoria Eterna. Todos los derechos reservados.</span>
+    <div class="social">
+    <a href="https://instagram.com/memoriaeterna" target="_blank" rel="noopener" aria-label="Instagram de Memoria Eterna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://facebook.com/memoriaeterna" target="_blank" rel="noopener" aria-label="Facebook de Memoria Eterna"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.4 1.5-1.4h1.6V4.5c-.3 0-1.200-.1-2.300-.1-2.300 0-3.800 1.400-3.800 3.900v2.200H8v3h2.500V21z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
